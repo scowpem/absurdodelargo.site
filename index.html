@@ -34,6 +34,28 @@
 
 <p style="text-align: center; color: white;">D&copy; 2022 &ndash; Todos os direitos reservados. Este site n&atilde;o faz parte nem &eacute; endossado pelo Facebook. Facebook &eacute; uma marca comercial da Facebook, Inc.</p>
 </div>
+	
+	
+	<!---???????????? INICIO CARREGADOR UTM ????????????---><script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('lpoficial.html') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script><!---???????????? FINAL CARREGADOR UTM ????????????--->
+	
+	
+	
 <script type="text/javascript" src="script.js"></script><!---⇊⇊⇊⇊⇊⇊⇊⇊⇊⇊⇊⇊ BLOQUEADOR DE CONTEUDO ⇊⇊⇊⇊⇊⇊⇊⇊⇊⇊⇊⇊---><script>
 document.addEventListener("contextmenu", function (e){
     e.preventDefault();
